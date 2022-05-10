@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/articulo"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Pagina"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/articulo"
+        app:layout_constraintTop_toTopOf="@+id/articulo" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Descripcion"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/articulo"
+        app:layout_constraintTop_toBottomOf="@+id/articulo" />
+
+    <ImageView
+        android:id="@+id/Publicacion"
+        android:layout_width="333dp"
+        android:layout_height="215dp"
+        app:layout_constraintStart_toStartOf="@+id/articulo"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Publicacion">
+
+        <ImageButton
+            android:id="@+id/lbi1"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/l1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/lbi2"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/l2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/lbi3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/l3"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F6">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        tools:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alejandro León"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@+id/avatar" />
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ver tu perfil"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <ImageView
+        android:id="@+id/m1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me1"
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+    <ImageView
+        android:id="@+id/m2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me2"
+        app:layout_constraintStart_toEndOf="@+id/m1"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+    <ImageView
+        android:id="@+id/m3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me3"
+        app:layout_constraintStart_toStartOf="@+id/m1"
+        app:layout_constraintTop_toBottomOf="@+id/m1" />
+
+    <ImageView
+        android:id="@+id/m4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me4"
+        app:layout_constraintStart_toEndOf="@+id/m3"
+        app:layout_constraintTop_toBottomOf="@+id/m2" />
+
+    <ImageView
+        android:id="@+id/m5"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me5"
+        app:layout_constraintStart_toStartOf="@+id/m3"
+        app:layout_constraintTop_toBottomOf="@+id/m3" />
+
+    <ImageView
+        android:id="@+id/m6"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me6"
+        app:layout_constraintStart_toEndOf="@+id/m5"
+        app:layout_constraintTop_toBottomOf="@+id/m4" />
+    <ImageView
+        android:id="@+id/m7"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me7"
+        app:layout_constraintStart_toStartOf="@+id/m5"
+        app:layout_constraintTop_toBottomOf="@+id/m5" />
+
+    <ImageView
+        android:id="@+id/m8"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me8"
+        app:layout_constraintStart_toEndOf="@+id/m7"
+        app:layout_constraintTop_toBottomOf="@+id/m6" />
+    <ImageView
+        android:id="@+id/m9"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me9"
+        app:layout_constraintStart_toStartOf="@+id/m7"
+        app:layout_constraintTop_toBottomOf="@+id/m7" />
+
+    <ImageView
+        android:id="@+id/m10"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me10"
+        app:layout_constraintStart_toEndOf="@+id/m9"
+        app:layout_constraintTop_toBottomOf="@+id/m8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
